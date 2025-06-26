@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎓 Course Dashboard
 
-## Getting Started
+A responsive and interactive course dashboard built using **Next.js**, **TypeScript**, and **Bootstrap**. The app showcases a grid of course cards with features like favorite toggle, JSON file download, filtering, sorting, search, and theme switching (dark/light mode).
 
-First, run the development server:
+---
+
+## 🚀 Live Demo
+
+👉 [Visit deployed site](https://course-dashboard-prince.netlify.app/)
+
+---
+
+## 📦 Tech Stack
+
+- **Framework**: [Next.js](https://nextjs.org/) with App Router
+- **Language**: TypeScript
+- **Styling**: Bootstrap 5, custom CSS
+- **Icons**: React Icons
+- **State Management**: React hooks (`useState`, `useEffect`)
+
+---
+
+## 📸 Features
+
+### ✅ Core Functionalities
+- Responsive grid layout for course cards
+- Card includes:
+  - Course image/thumbnail
+  - Semester badge
+  - Title and Course Code
+  - Status badge (Open/Closed)
+  - Action icons:
+    - View Summary (Modal)
+    - Download course as JSON
+    - Add to Cart
+    - Favorite toggle
+- Three-dot menu (planned)
+
+### 🎛 Dashboard Controls
+- 🔍 Search bar (with clear button)
+- 🎚 Sort dropdown (`title`, `code`) with reset option
+- 🟢 Filter by status (`Open`, `Closed`, `All`) with reset option
+- 🌗 Dark/Light mode toggle using Bootstrap theme classes
+
+### 📡 API Integration
+- Fetches mock course data from [MockAPI](https://mockapi.io/)
+- Handles loading state with spinner
+- Optimistic updates for favorite toggle
+
+---
+
+## 🛠 Setup Instructions
+
+### 🔧 Clone & Install
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+git clone https://github.com/your-username/course-dashboard.git
+cd course-dashboard
+npm install
